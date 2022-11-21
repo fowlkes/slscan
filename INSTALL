@@ -1,0 +1,11 @@
+# drivers for basler cameras
+dpkg -i pylon_5.0.12.11829-deb0_amd64.deb
+
+# get conda opencv install setup
+sudo apt install libgtk2.0-dev
+conda install libgcc pkg-config
+conda install -c conda-forge opencv
+
+# in PyPylon directory
+python setup.py install
+
